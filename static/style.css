@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+*::-webkit-scrollbar{
+    display: none;
+    appearance: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #232323;
+    color: white;
+    padding: 20px 20px;
+}
+.container-fluid{
+    height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.content{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.header .title{
+    font-size: 30px;
+    text-align: center;
+    border: 0.3px solid #434343;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(45deg,#030303,#232323,#030303);
+    transition: .3s;
+}
+.formBox{
+    width: 75%;
+    color: black;
+    margin: 10px 0;
+    padding: 20px 20px;
+}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+.btn-success{
+    background-color: #28a745!important;
+}
+.btn-success:hover{
+    background: #218838 !important;
+}
+.status{
+    width: 75%;
+}
+.status .row{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.status.Accepted{
+    border: 1px solid #218838;
+    padding: 20px 20px;
+}
+.status.Rejected{
+    border: 1px solid red;
+    padding: 20px 20px;
+}
+@media only screen and (max-width: 768px) {
+    .formBox{
+        width: 100%;
+    }
+    .status{
+        width: 100%;
+    }
+}
