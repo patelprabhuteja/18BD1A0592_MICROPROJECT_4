@@ -30,7 +30,7 @@ try{
 				}
 			}
 			if(inputs[i].id==="aadhar"){
-				if(inputs[i].value.length==16){
+				if(inputs[i].value.length==12){
 					inputs[i].classList.add("is-valid");
 					inputs[i].classList.remove("is-invalid");
 					flag=false;
